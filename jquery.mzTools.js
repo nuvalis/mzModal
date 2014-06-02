@@ -152,7 +152,7 @@
     *
     */
 
-    $.fn.mzSlider = function (options) {
+    $.fn.mzSlider = function (settings) {
 
         var totalSlides, slideDuration, animationDur, element = this,
             currentSlide, slideTimer, nextSlide, animating;
@@ -168,7 +168,7 @@
             effectStart: 0,
             effectEnd: "150%",
             addControls: true,
-        }, options);
+        }, settings);
 
         // Find all li elements in targeted parent element
         var slides = element.find(settings.element);
@@ -181,7 +181,7 @@
 
         slides.eq(0).css(effectWrapper);
 
-        if(addControls){createControls();}
+        if(settings.addControls){createControls();}
 
         timer(); // Init
 
