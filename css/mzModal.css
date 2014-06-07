@@ -221,7 +221,7 @@ body.modal-open {
   }
 }
 
-@-webkit-keyframes rightslide {
+@keyframes rightslide {
   0% {
     left: 105%;
     opacity: 0;
