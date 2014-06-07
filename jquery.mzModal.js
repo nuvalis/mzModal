@@ -5,9 +5,10 @@
         // Defaults
 
         var settings = $.extend({
+            animation: "flip",
             width: "50%",
             title: "Test Title",
-            content: "Some kind of description...",
+            content: "Your content goes here. Can be text or html.",
             top: "15%",
             left: "25%",
             ajax: true,
@@ -125,7 +126,7 @@
         }
 
         function modalUp() {
-            var html = $('<div class="mzmodal"><h2>' + settings.title +
+            var html = $('<div class="mzmodal mz'+settings.animation+'"><h2>' + settings.title +
                 '</h2><div class="mzmodal-inner">' + settings.content +
                 '</div><a href="#" class="mzmodal-exit">Close</a></div>');
 

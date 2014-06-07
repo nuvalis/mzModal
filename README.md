@@ -41,7 +41,7 @@ JSON Installation for Anax-MVC and Usage
 
 Download Zip, or clone.
 
-Copy the JSON Directory to the app/src in your Anax-MVC Project
+Copy the JSON Directory inside AnaxModule/ to the app/src in your Anax-MVC Project
 
 Add this to your config.
     
@@ -97,51 +97,8 @@ It should now print your array data as JSON! Now you can pass this URL to your m
     /*  The href will be overriden, 
     *   to disable this, change ignoreLink: to false 
     */
-    <a href="http://localhost/anax/webroot/users/login/json">Login</a>
+    <a class="login login-modal" href="http://localhost/anax/webroot/users/login/json">Login</a>
 
-Extra functionality
-===================
-
-This mzTools bundle comes with mzSlider for a simple lightbox/slider thingy
-
-To do this you need to render an HTML list through your controller like this one.
-
-    <ul class="slider">
-        <li><img src="example.jpg" alt="Example"></li>
-        <li><img src="example.jpg" alt="Example"></li>
-        <li><img src="example.jpg" alt="Example"></li>
-    </ul>
-
-Then add
-
-    $(".slider").mzSlider();
-
-Done.
-
-Config mzSlider
----------------
-
-    $(".slider").mzSlider({
-    
-        //Defaults
-    
-        debug: false,           // For debugging purposes
-    
-        slideDuration: 4000,        // Duration for each slide in milliseconds
-    
-        animationDur: 400,      // Animation Duration in milliseconds
-    
-        element: "li",          // Default element child target
-    
-        currentSlide: 0,        // Starting point of slider. Use as offset if needed
-    
-        effect: "margin-left",      // CSS3 Transition property 
-    
-        effectStart: 0,         // Starting Keyframe
-    
-        effectEnd: "150%"       // Ending Keyframe
-    
-    });
 
 License
 ==========
