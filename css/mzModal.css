@@ -105,10 +105,10 @@ body.modal-open {
 
 @-webkit-keyframes flip {
   0% {
-    transform:  rotateY(-90deg) rotateX(10deg) scaleX(1) scaleY(1) ;
+    -webkit-transform:  rotateY(-90deg) rotateX(10deg) scaleX(1) scaleY(1) ;
   }
   100% {
-    transform:  rotateY(0deg) rotateX(0deg)  scaleX(1) scaleY(1) ;
+    -webkit-transform:  rotateY(0deg) rotateX(0deg)  scaleX(1) scaleY(1) ;
   }
 }
 
